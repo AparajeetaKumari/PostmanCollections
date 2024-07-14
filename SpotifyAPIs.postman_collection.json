@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "57175b34-a840-4932-9b23-1a6764ada85c",
+		"name": "SpotifyAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "301708"
+	},
+	"item": [
+		{
+			"name": "GetUsersPlayList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();",
+							"console.log(res);",
+							"",
+							"for(let i=0;i<res.items.length;i++){",
+							"    console.log(res.items[i].name);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "BQDYp8lt_hWGqRpmyLVW5k_bW7RviCnYxT_4s4dDleFu_4OtiR0pp2DjpZWz9HA25BVFj8W3k3VhQjM9q4at8Dei4W3AyP8igLdR_43H1E0_HhlbwHsDx_luEdeFyc1o06GMRXBsuCeTnU0g-tmo8xVmIsM2ggCXILkpYrMX2DXn9CikhwY8g7aPoyT671R7XZ9ElA",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Spotify API",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "refresh_token",
+							"value": "AQAV3mQaPKZSY2c4t0Li4GoAInkKLKryItaEj5YIIZLKU_Sx7OGERbE7-rjzrxOQ5xWnuNFLU24xUuJ7fzElZIwlGJTn1cGAxTcg9_nicmTGIt0gUQu_oRK-9N7zJmjFCJI",
+							"type": "string"
+						},
+						{
+							"key": "expires_in",
+							"value": 3600,
+							"type": "number"
+						},
+						{
+							"key": "token_id",
+							"type": "any"
+						},
+						{
+							"key": "timestamp",
+							"type": "any"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.spotify.com/authorize",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "278a6a0526f142009923f96e2d677256",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://accounts.spotify.com/api/token",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/users/31vo5bsumg4njwsb4ly7wolq55pi/playlists",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"users",
+						"31vo5bsumg4njwsb4ly7wolq55pi",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsersPlayList Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let res = pm.response.json();",
+							"console.log(res);",
+							"",
+							"for(let i=0;i<res.items.length;i++){",
+							"    console.log(res.items[i].name);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "BQDYp8lt_hWGqRpmyLVW5k_bW7RviCnYxT_4s4dDleFu_4OtiR0pp2DjpZWz9HA25BVFj8W3k3VhQjM9q4at8Dei4W3AyP8igLdR_43H1E0_HhlbwHsDx_luEdeFyc1o06GMRXBsuCeTnU0g-tmo8xVmIsM2ggCXILkpYrMX2DXn9CikhwY8g7aPoyT671R7XZ9ElA",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Spotify API",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "refresh_token",
+							"value": "AQAV3mQaPKZSY2c4t0Li4GoAInkKLKryItaEj5YIIZLKU_Sx7OGERbE7-rjzrxOQ5xWnuNFLU24xUuJ7fzElZIwlGJTn1cGAxTcg9_nicmTGIt0gUQu_oRK-9N7zJmjFCJI",
+							"type": "string"
+						},
+						{
+							"key": "expires_in",
+							"value": 3600,
+							"type": "number"
+						},
+						{
+							"key": "token_id",
+							"type": "any"
+						},
+						{
+							"key": "timestamp",
+							"type": "any"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.spotify.com/authorize",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "278a6a0526f142009923f96e2d677256",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://accounts.spotify.com/api/token",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/users/31vo5bsumg4njwsb4ly7wolq55pi/playlists",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"users",
+						"31vo5bsumg4njwsb4ly7wolq55pi",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
